@@ -1,0 +1,2 @@
+/* pages/Product/list/list.wxss */
+@import '../../../templates/productListItem/productListItem.wxss';

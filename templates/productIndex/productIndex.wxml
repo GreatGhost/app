@@ -1,0 +1,26 @@
+<template name="product-index">
+    <view class="product-item-index">
+        <view class="img-wrap">
+                <image src="{{item.imgPath}}" wx:if="{{item.imgPath}}"/>
+                <view class="product-title bold">
+                    <text>{{item.title}}</text>
+                    <text>{{item.capacity}}</text>
+                </view>
+        </view>
+        <view class="product-content">
+            <view class="prices">
+                <view class="price-region bold">
+                    <text>出价区间：</text>
+                    <text>{{item.region}}</text>
+                </view>
+                <view class="price-market small">
+                    <text>市场参考价:</text>
+                    <text>{{item.marketPrice}}</text>
+                    </view>
+            </view>
+            <button type="submit" class="product-btn" bindtap="{{action}}">立即出价</button>
+        </view>
+    </view>
+</template>
+
+     

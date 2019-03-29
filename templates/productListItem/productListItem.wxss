@@ -1,0 +1,30 @@
+@import '/app.wxss';
+.product-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:18rpx;    
+    background: #fff;
+    padding:30rpx 0 188rpx 30rpx;
+}
+.product-image image{
+    width:160rpx;
+    height: 160rpx;
+    border:1rpx solid #F2F2F2;
+    border-radius: 4rpx;
+}
+.product-list-item .content{
+    flex:1;
+    margin-left:20rpx;
+    margin-top:4rpx;
+}
+.product-list-item .content .title text:last-child{
+    color:#9B9B9B;
+    margin-left: 30rpx;
+}
+.product-list-item .content .bid-price{
+    margin-top:56rpx;
+    font-size:40rpx;
+    color:rgba(255,26,41,1);
+    line-height:56rpx;
+}

@@ -1,0 +1,36 @@
+/* components/headNav/headNav.wxss */
+.head-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.head-nav-item{
+    position: relative;
+    flex: 1;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    background: #fff;
+}
+.head-nav-item.active{
+    color: #FF1A29;
+    font-size: 32rpx;
+    font-weight: 600;
+}
+.head-nav-item.active:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 32rpx;
+    height: 4rpx;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF1A29;
+}
+.normal{
+    font-size:28rpx;
+    font-family:PingFangSC-Semibold;
+    font-weight:600;
+    color:rgba(179,179,179,1);
+  }

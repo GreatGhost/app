@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<import src="/templates/productIndex/productIndex.wxml" />
+<import src="/templates/demo/demo.wxml" />
+
+<view class="index">
+  <template is="product-index" wx:for="{{list}}" data="{{item, action:'goBit'}}" wx:key="{{index}}" />
+</view>

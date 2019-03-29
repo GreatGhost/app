@@ -1,0 +1,6 @@
+<!--components/headNav/headNav.wxml-->
+<view class="head-nav">
+    <view class="head-nav-item normal {{navIndex==index?'active':''}}" wx:for="{{nav}}" data-index="{{index}}" bindtap="selectNav">
+        {{item}}
+    </view>
+</view>

@@ -1,0 +1,6 @@
+<!--pages/Product/list/list.wxml-->
+<import src="/templates/productListItem/productListItem.wxml" />
+<view class="list">
+    <template-nav nav="{{navs}}"></template-nav>
+    <template is="product-list-item" data="{{item, action:'getProductShow'}}" wx:for="{{list}}"></template>
+</view>
