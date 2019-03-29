@@ -9,6 +9,32 @@
         </block>
     </swiper>
 
-    
-
+    <view class="product-name">
+         <view class="title">
+             <view class="bold">{{detail.name}}</view>
+             <view class="small">市场参考价：{{detail.marketPrice}}</view>
+         </view>
+         <view class="wx-group">
+             <image src="/resource/images/index.png"></image>
+             <view class="small">官方嗨友群</view>
+         </view>
+    </view>
+    <view class="product-region">
+        <view class="region bold">
+            <text>嗨价区间: </text>
+            <text>{{detail.region}}</text>
+        </view>
+        <view class="rule normal">
+                <text>查看嗨购规则</text>
+                <image src="/resource/images/arrow.png"></image>
+        </view>
+    </view>
+    <view class="bid-success-list">
+        <view class="content-title">
+            <view class="bold">出价成功名单</view>
+            <view class="normal">查看更多</view>
+        </view>
+    </view>
+    <view class="prodcut-detail-imgs"></view>
+    <view class="bit-share-btns"></view>
 </view>

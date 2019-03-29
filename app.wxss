@@ -18,14 +18,17 @@ page{
   font-size:32rpx;
   font-family:PingFangSC-Semibold;
   font-weight:600;
+  line-height:44rpx;
 }
 .normal{
   font-size:28rpx;
   font-family:PingFangSC-Semibold;
   font-weight:600;
+  line-height:40rpx;
 }
 .small{
   font-size:24rpx;
   font-family:PingFangSC-Regular;
   font-weight:400;
+  line-height: 34rpx;
 }
