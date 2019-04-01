@@ -4,11 +4,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.content-title view:first-child{
+.content-title view.title-left{
     color:#000;
 }
-.content-title view:last-child{
+.content-title view.title-right{
     color:#9B9B9B;
+    font-family:PingFangSC-Regular;
 }
 .show swiper{
     width:100%;
@@ -57,7 +58,7 @@
 }
 .product-region .region{
     font-size:40rpx;
-    
+    line-height: 56rpx;  
 }
 .product-region .region text:last-child{
     color: #FF1A29;
@@ -73,4 +74,77 @@
     width:24rpx;
     height:36rpx;
     margin-left:8rpx;
+}
+.bid-success-list{
+    padding:40rpx;
+    background: #fff;
+    margin-top:20rpx;
+}
+.success-list{
+    margin-top: 30rpx;
+    border:1rpx solid rgba(217,217,217,1);
+    border-radius:8rpx;
+    padding:0 30rpx 30rpx;
+}
+.success-item{
+    display: flex;
+    align-items: center;
+    margin-top:40rpx;
+}
+.success-item .item-head-pic{
+    width:52rpx;
+    height: 52rpx;
+    border-radius: 50%;
+    margin-right:24rpx;
+    border:1rpx solid rgba(217,217,217,1);
+}
+.success-item .item-message{
+    flex:1;
+    color:rgba(74,74,74,1);
+    text-align: left;
+}
+.success-item .item-time{
+    color:rgba(74,74,74,1);
+    text-align: left;
+}
+.product-detail-imgs{
+    margin-top:20rpx;
+    background: #fff;
+    padding:30rpx 40rpx 30rpx;
+}
+.product-detail-imgs .imgs-list{
+    margin-top:30rpx;
+}
+.product-detail-imgs .imgs-list image{
+    width:670rpx!important;
+    margin-top:4rpx;
+}
+.bit-share-btns{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 120rpx;
+    padding:0 40rpx;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    box-sizing: border-box;
+}
+.bit-share-btns button{
+    width:200rpx;
+    height: 80rpx;
+    text-align: center;
+    border-radius:44rpx;
+    border:1rpx solid rgba(255,26,41,1);
+    color:#FF1A29;
+    background: #fff;
+    line-height: 80rpx;
+    box-sizing: border-box;
+}
+.bit-share-btns button.bit{
+    width:440rpx;
+    margin-left:30rpx;
+    background: #FF1A29;
+    color:#fff;
 }

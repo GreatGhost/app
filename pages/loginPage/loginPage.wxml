@@ -1,0 +1,62 @@
+
+<block wx:if="{{showCheckNum}}">  
+  <view class="container">    
+      <view class="header">登陆验证</view>
+      <view  class="mobile">{{hideMobile}}</view>
+      <view  class="change-mobile-btn" bind:tap="jumpChangeMobile">更换手机号码</view>
+      <!--<input type="number" maxlength="11" focus="{{true}}" placeholder="请输入你的手机号码" />-->
+      <view class="checkNum-container">                
+        <view class="input-holder" wx:for="{{checkList}}" wx:key="{{index}}">{{item}}</view>
+        <input  class="block-checknum" type='number' maxlength="{{4}}" focus="{{true}}" bindinput="inputChange"></input>
+      </view>
+      <view bind:tap="confirmAuth"  class="time-remain" wx:if="{{resendRemain > 0}}">{{resendRemain}}s可重发</view>
+      <view class="audio-check-leading" data-audio="{{true}}" bind:tap="getCheckNum">你也可以尝试接听<text>语音验证码</text></view>
+      <button plain bindgetuserinfo="confirmAuth" open-type="getUserInfo" class="action-check" disabled="{{checkActionDisable}}" >确认</button>    
+  </view>
+</block>
+
+<!-- 选择角色 -->
+<block wx:elif="{{showUserType}}">
+  <view class="role-top-container">
+    <view class="role-title">选择您的身份<view class="role-subtitle">（请慎重选择，选定后不可修改）</view></view>
+    <image class="role-item" wx:for="{{positions}}" wx:key="{{item.id}}" data-id="{{item.id}}" mode="aspectFit" src="{{item.image}}" bind:tap="chooseUserType"/>
+    <!--<button class="role-container" plain  wx:for="{{positions}}" wx:key="{{item.id}}" data-id="{{item.id}}" bind:tap="chooseUserType"> 
+      <image class="role-icon" mode="aspectFit" src="{{item.image}}" />
+      <view class="role-desc">
+        <view class="role-title">{{item.name}}</view>
+        <view class="role-slogan">{{item.slogan}}</view>
+      </view>
+    </button>  -->
+  </view>
+</block>
+
+
+<block wx:elif="{{showAuthButton}}"> 
+  <view class="container-bg">
+    <image  class="first-auth-bg" src="/resource/loginPage-bg.png" />
+    <button plain class="first-auth" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">微信一键登录</button>
+    <view class="first-auth-slogan">海量一手货盘，运力信息，一键匹配</view>
+  </view>
+</block>
+
+<block wx:elif="{{showChangeMobile}}">
+  <view class="change-mobile-top-container">
+    <view class="change-mobile-inter-container">
+      <view class="change-mobile-title">更换手机号码</view>
+
+      <view class="change-mobile-input-container">        
+        <input class="change-mobile-mobile" placeholder="请输入手机号码" maxlength="{{11}}" type="number" bindinput="mobileChange"> </input>
+      </view>
+      
+      <view class="change-mobile-input-container">        
+        <input class="change-mobile-checkNum" placeholder="短信验证码" maxlength="{{6}}" type="number" bindinput="inputChange"> </input>
+        <view class="change-mobile-checkNum-send"  id="disabled-send"  wx:if="{{resendRemain > 0}}">{{resendRemain}}s</view>
+        <view class="change-mobile-checkNum-send"wx:else data-audio="{{false}}" bind:tap="getCheckNum">获取验证码</view>
+        
+      </view>      
+
+      <view class="change-mobile-confirm" bind:tap="confirmAuth">确认</view>
+    </view>
+  </view>
+  
+</block>

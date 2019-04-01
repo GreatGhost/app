@@ -1,2 +1,24 @@
 <!--pages/Product/bid/bid.wxml-->
-<text>pages/Product/bid/bid.wxml</text>
+<view class="bid">
+    <view class="bid-title bold">当前嗨价区间</view>
+    <view class="bid-price-region bold">0.00~0.99元</view>
+    <view class="bid-input-price">
+        <view class="unit">¥</view>
+        <view class="bid-input">
+            <input type="number" value="" maxlength='1' />
+        </view>
+        <view class="point"></view>
+        <view class="bid-input">
+             <input type="number" value="" maxlength='1' />
+        </view>
+        <view class="bid-input">
+            <input type="number" value="" maxlength='1' />
+        </view>
+    </view>
+    <view class="random-bid normal">随机出价</view>
+    <button class="confirm bold">确认出价</button>
+    <view class="rules">
+        <image src="/resource/images/btn-choose.png"></image>
+        <view class="rule normal">同意好嗨哟规则</view>
+    </view>
+</view>

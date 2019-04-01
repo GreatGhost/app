@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "template-nav":"../../../components/headNav/headNav"
-  }
+  },
+  "navigationBarTitleText": "Hi商城"
 }

@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
-const app = getApp()
-const service =require("../../utils/service")
+const app = getApp();
 Page({
   data: {
     motto: 'Hello World',
@@ -61,14 +60,20 @@ Page({
       hasUserInfo: true
     })
   },
-  goBit(){
+  goBid(e){
+    let data=e.currentTarget.dataset.data;
+    data=JSON.stringify(data);
     wx.navigateTo({
-      url:'/pages/Product/bid/bid'
+      url:'/pages/Product/bid/bid?data='+data
+    })
+  },
+  getProductDetail(e){
+    let data=e.currentTarget.dataset.data;
+    data = JSON.stringify(data);
+    wx.navigateTo({
+      url: "/pages/Product/show/show?data="+data
     })
   },
   getIndexData(){
-   service.getIndexActivity().then(res=>{
-     console.log(res);
-   });
   }
 })

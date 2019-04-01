@@ -1,0 +1,55 @@
+/* pages/user/mine/mine.wxss */
+.mine .header{
+    padding-top:80rpx;
+    padding-bottom:60rpx;
+    background: #fff;
+}
+
+.mine .header image{
+    display: block;
+    width:160rpx;
+    height: 160rpx;
+    margin:0 auto;
+    border-radius:50%;
+}
+view.nick-name{
+    text-align: center;
+    margin-top:40rpx;
+}
+.mine-info-list{
+    margin-top:20rpx;
+    background: #fff;
+}
+.mine-info-item{
+    display: flex;
+    align-items: center;
+    height:112rpx;
+    padding-left:44rpx;
+    padding-right:40rpx;
+    border-bottom: 1rpx solid #F7F7F7;
+}
+.mine-info-item image.icon{
+    width:46rpx;
+    height:46rpx;
+}
+.mine-info-item .info-name{
+    flex:1;
+    margin-left:34rpx;
+    font-size:32rpx;
+    line-height: 44rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+}
+
+.mine-info-item .contact-phone{
+    font-size:36rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(204,204,204,1);
+    line-height:42rpx;
+}
+.mine-info-item .arrow{
+    width:24rpx;
+    height:36rpx;
+    margin-left:16rpx;
+}

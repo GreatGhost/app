@@ -1,4 +1,5 @@
 <!--pages/Product/show/show.wxml-->
+<import src="../../../wxParse/wxParse.wxml"/>
 <view class="show">
     <!-- 商品轮播图 -->
     <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}">
@@ -31,10 +32,27 @@
     </view>
     <view class="bid-success-list">
         <view class="content-title">
-            <view class="bold">出价成功名单</view>
-            <view class="normal">查看更多</view>
+            <view class="title-left bold">出价成功名单</view>
+            <view class="title-right normal">查看更多</view>
+        </view>
+        <view class="success-list">
+            <view class="success-item" wx:for="{{successBitList}}" wx:key="{{index}}">
+                <view class="item-head-pic"></view>
+                <view class="item-message normal">{{item.message}}</view>
+                <view class="item-time normal">{{item.time}}</view>
+            </view>
         </view>
     </view>
-    <view class="prodcut-detail-imgs"></view>
-    <view class="bit-share-btns"></view>
+    <view class="product-detail-imgs">
+        <view class="content-title">
+            <view class="title-left bold">商品详情</view>
+        </view>
+        <view class="imgs-list">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+        </view>
+    </view>
+    <view class="bit-share-btns">
+        <button class="bold">分享</button>
+        <button class="bold bit" bindtap="goBid">立即出价</button>
+    </view>
 </view>

@@ -1,0 +1,15 @@
+<!--pages/user/mine/mine.wxml-->
+<view class="mine">
+    <view class="header">
+        <image src="/resource/images/index.png"></image>
+        <view class="nick-name bold">叶先生</view>
+    </view>
+    <view class="mine-info-list">
+        <view class="mine-info-item" wx:for="{{mineList}}" wx:key="{{index}}" data-data="{{item}}" bindtap="tapMineItem">
+            <image class="icon" src="{{item.imgIcon}}"></image>
+            <view class="info-name" >{{item.name}}</view>
+            <view class="contact-phone" wx:if="{{item.id=='contact'}}">{{item.contactPhone}}</view>
+            <image class="arrow" src="/resource/images/arrow.png"></image>
+        </view>
+    </view>
+</view>

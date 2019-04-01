@@ -18,7 +18,7 @@
 }
 .product-title text:last-child{
     color:#9B9B9B;
-    margin-left:30rpx;
+    margin-left:12rpx;
 }
 .product-content{
     display: flex;
@@ -36,6 +36,9 @@
 }
 .product-content .price-region text:last-child{
     color:#FF1A29;
+}
+.product-content .price-market{
+    color:#9B9B9B;
 }
 .product-content button{
     width:240rpx;

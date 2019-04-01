@@ -1,4 +1,5 @@
 // pages/Product/show/show.js
+var WxParse = require('../../../wxParse/wxParse.js');
 Page({
 
   /**
@@ -16,14 +17,20 @@ Page({
       marketPrice:'9.99元',
       QrCode:'官方嗨友群',
       region:'0.00~0.99元'
-    }
+    },
+    successBitList:[
+      {head_pic:'',message:'吴...操用0.01元购买成功',time:'3分钟前'},
+      {head_pic:'',message:'吴...操用0.01元购买成功',time:'3分钟前'},
+      {head_pic:'',message:'吴...操用0.01元购买成功',time:'3分钟前'},
+    ]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options);
+    this.getProductDetail();
   },
 
   /**
@@ -73,5 +80,28 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  getProductDetail(){
+    let param={activityId:'5254c73e0ddf4f2d91dff86568957eeb',goodsId:'268a57f633889b8633b3a966f302dcf0'};
+    //let productExtTxt2='<p><br/></p><p><img src="http://img.baidu.com/hi/jx2/j_0081.gif"/><img src="http://img.baidu.com/hi/jx2/j_0076.gif"/></p><p>测<span style="background-color: rgb(255, 0, 0);">试富文本编辑器转微信小程序功能</span></p><p><span style="border: 1px solid rgb(0, 0, 0);">测试富文本编辑器转微信小程序功能1</span></p><p><span style="color: rgb(0, 176, 240);">测试富文本编辑器转微信小程序功能2</span></p><p><span style="text-decoration: underline;">测试富文本编辑器转微信小程序功能3</span></p><p>测试富文本编辑器转微信小程序功能4</p><p><strong>测试富文本编辑器转微信小程序功能5</strong><br/></p>'
+    let productExtTxt2='<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554097473969&di=7147110dd1feb1df4024008af58d143b&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F01%2F00%2F5156f3da8104518.jpg" /><br/><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554097473969&di=7147110dd1feb1df4024008af58d143b&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F01%2F00%2F5156f3da8104518.jpg" /><br/><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554097473969&di=7147110dd1feb1df4024008af58d143b&imgtype=0&src=http%3A%2F%2Fbpic.588ku.com%2Felement_origin_min_pic%2F01%2F01%2F00%2F5156f3da8104518.jpg" />'
+    let that=this;
+    let time1=　new Date("Jun 2,2017");
+    let time2=new Date();
+    utils.getDateDiff(time1.getTime())
+    /*** WxParse.wxParse(bindName , type, data, target,imagePadding)
+    * 1.bindName绑定的数据名(必填)
+    * 2.type可以为html或者md(必填)
+    * 3.data为传入的具体数据(必填)
+    * 4.target为Page对象,一般为this(必填)
+    * 5.imagePadding为当图片自适应是左右的单一padding(默认为0,可选)*/ 
+    var temp = WxParse.wxParse('article', 'html',productExtTxt2, that, 5);
+      that.setData({nodes:productExtTxt2});
+      
+  },
+  goBid(){
+    wx.navigateTo({
+      url: "/pages/Product/bid/bid",
+    })
   }
 })

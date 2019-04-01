@@ -11,6 +11,10 @@
     height: 88rpx;
     line-height: 88rpx;
     background: #fff;
+    font-size:28rpx;
+    font-family:PingFangSC-Semibold;
+    font-weight:600;
+    color:rgba(179,179,179,1);
 }
 .head-nav-item.active{
     color: #FF1A29;
@@ -28,9 +32,3 @@
     transform: translateX(-50%);
     background: #FF1A29;
 }
-.normal{
-    font-size:28rpx;
-    font-family:PingFangSC-Semibold;
-    font-weight:600;
-    color:rgba(179,179,179,1);
-  }

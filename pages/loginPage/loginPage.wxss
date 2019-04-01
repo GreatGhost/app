@@ -1,0 +1,267 @@
+page {
+  background-color: #f0f0f0;
+  color: 24252a;
+  font-size: 15px;
+  
+}
+
+.container {
+  margin: 200rpx 60rpx;  
+  border-radius: 10rpx;
+  height: 100%;
+  text-align: center;
+  background-color: white;  
+  font-size: 14px;
+}
+
+.header{  
+  padding: 29px 0;  
+  font-size: 18px;
+}
+
+.mobile {
+  font-size: 24px;
+  color: #666;
+  padding: 8px 0;
+}
+
+.mobile text {
+  color: #24252a;
+}
+
+.change-mobile-btn {
+  color: #ccc;
+  font-size: 24rpx;
+}
+
+button {
+  border-radius: 0 !important;
+  border:0 none transparent !important;
+  font-weight: 500;  
+}
+
+.checkNum-container {  
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 29px 0;
+}
+
+.block-checknum {
+  position: absolute;     
+  top:0;
+  left:-100%;
+  width: 200%;
+  height: 100%;
+  text-align: left;
+  color: #666;  
+}
+
+.input-holder {
+  width: 70rpx;
+  height:70rpx;  
+  line-height: 70rpx;
+  margin: 0 10rpx;
+  font-size: 20px;
+  border-bottom: 1rpx #ccc solid;
+}
+
+.time-remain {
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.audio-check-leading {
+  text-align: center;
+  margin-bottom: 29px;  
+  color: #999;
+}
+.audio-check-leading text {
+  color: #5a6680;
+}
+
+
+.action-check {
+  color: #f55426 !important;  
+  border-top: 1rpx solid #ccc !important;
+  padding: 10rpx 0;
+}
+
+.position {
+  height: 100rpx;
+  margin: 10rpx 0;
+  padding: 0rpx 20rpx;
+  background-color: #ccc;
+  line-height: 100rpx;
+}
+
+.container-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/*.role-container {
+  display: flex;
+  align-items: center;
+  margin-top: 107rpx;
+  margin-bottom:53rpx;  
+  margin-left: 20px;
+  margin-right: 20px;
+
+  padding:0 !important;
+  border-radius: 4rpx !important;
+  border: #f5f5f5 solid 1rpx !important;
+
+  box-shadow:3rpx 3rpx 60rpx rgba(0, 0, 0, .03);
+}*/
+
+.role-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.role-item {
+  width:710rpx;
+  height:290rpx;
+  margin-bottom: 8rpx;
+}
+
+.role-title {
+  display: flex;
+  align-items: flex-end;  
+  margin-top: 53rpx;
+  margin-bottom: 20rpx;
+  font-size: 18px;
+  width:710rpx;
+  text-align: left;  
+}
+
+.role-subtitle {
+  font-size: 12px;
+  color: #f55426;  
+}
+/*
+.role-icon {
+  width:112rpx;
+  height:112rpx;
+  margin:39rpx;
+}
+
+.role-desc {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.role-title {
+  font-size: 15px;
+  color: #24252a;
+  font-weight: 500;
+  line-height: 15px;
+  padding:14rpx 0;
+}
+
+.role-slogan {
+  font-size: 12px;
+  color: #666;
+  
+  line-height: 12px;
+  padding:14rpx 0;
+}*/
+
+
+.first-auth {
+  margin: 0 20px;
+  position: relative;
+  top:-250rpx;
+  background-color: #f55426 !important;
+  border-radius: 5rpx !important;
+  color: #fff !important;
+}
+
+.first-auth-slogan {  
+  width: 600rpx;
+  margin: 0 auto;
+  position: relative;
+  top: -250rpx;
+  margin-top: 50rpx;
+  font-size: 24rpx;    
+  color: #666;
+  text-align: center;
+}
+
+.first-auth-bg {  
+  width:750rpx;
+  height:752rpx;
+}
+
+
+.change-mobile-top-container {
+  position: absolute;  
+  width: 100%;
+  height: 100%;
+  background-color: #8f8f8f;
+}
+
+.change-mobile-inter-container {
+  background-color: #fff;
+  border-radius: 10rpx;  
+  /*/*height: 420rpx;*/
+  width: 560rpx;
+  margin:0 auto;
+  margin-top:320rpx;  
+}
+
+.change-mobile-title {  
+  width:100%;  
+  padding-top: 58rpx;
+  padding-bottom: 16rpx;
+  text-align: center;
+  font-size: 32rpx;  
+  font-weight: 500;
+}
+
+.change-mobile-input-container {  
+  border-bottom: 1px solid #e6e6e6;  
+  display: flex;
+  align-items: center;  
+  margin: 0 20px;
+}
+
+.change-mobile-input-container {
+  padding-top: 38rpx;  
+}
+
+.change-mobile-mobile, .change-mobile-checkNum {
+  flex:1;
+  padding-bottom: 18rpx;
+}
+
+.change-mobile-checkNum-send {
+  font-size: 24rpx;
+  text-align: right;
+  font-size: 14px;
+}
+
+#disabled-send {
+  color: #d1d1d1;
+}
+
+.change-mobile-checkNum-send, .change-mobile-confirm {
+  color: #f55426;
+  border: 0;
+  font-weight: 500;
+}
+
+.change-mobile-confirm {  
+  height:100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;  
+  font-size: 36rpx;
+}

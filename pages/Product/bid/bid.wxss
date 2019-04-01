@@ -1,1 +1,87 @@
 /* pages/Product/bid/bid.wxss */
+.bid{
+    background: #fff;
+    padding-top:60rpx;
+    text-align: center;
+    height: 100%;
+}
+
+.bid-price-region{
+    margin-top:24rpx;
+    color:#FF1A29;
+    line-height: 56rpx;
+}
+.bid-input-price{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 68rpx;
+}
+
+.bid-input-price .unit{
+    width:32rpx;
+    margin-right: 4rpx;
+    font-size:52rpx;
+    font-family:WeChat-Sans-SS-Medium;
+    font-weight:500;
+    color:rgba(0,0,0,1);
+    text-align: left;
+    line-height: 1;
+}
+.bid-input-price .point{
+    width:12rpx;
+    height: 12rpx;
+    border-radius: 50%;
+    margin:0 16rpx 12rpx 0;
+    align-self: flex-end;
+    background: #000;
+}
+.bid-input-price .bid-input{
+    width:88rpx;
+    height:96rpx;
+    background:rgba(242,242,242,1);
+    border-radius:4rpx;
+    margin-right:16rpx;
+    line-height: 96rpx;
+    font-size:88rpx;
+    font-family:WeChat-Sans-SS-Medium;
+    font-weight:500;
+    color:rgba(0,0,0,1);
+}
+.bid-input-price .bid-input input{
+    display: block;
+    width:100%;
+    height:100%;
+    border:none;
+}
+.random-bid{
+    display: inline-block;
+    height:46rpx;
+    line-height: 46rpx;
+    border-bottom:1rpx solid #B2B2B3;
+    margin-top:57rpx;
+}
+button.confirm{
+    display: block;
+    width:480rpx;
+    height:80rpx;
+    background:rgba(255,25,41,1);
+    border-radius:4rpx;
+    line-height: 80rpx;
+    color:#fff;
+    margin:98rpx auto 40rpx;
+}
+.rules{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rules image{
+    width:32rpx;
+    height:32rpx;
+    margin-right:16rpx;
+}
+.rules .rule{
+    color:rgba(153,153,153,1);
+    line-height:32rpx;
+}

@@ -1,0 +1,20 @@
+/* pages/user/addressAdd/addressAdd.wxss */
+.address-add{
+    padding:0 40rpx;
+    background: #fff;
+}
+.address-add-item{
+    display: flex;
+    align-items: center;
+    height: 102rpx;
+    border-bottom:1rpx solid #F7F7F7;
+}
+.address-add-item .name{
+    width:128rpx;
+    margin-right:48rpx;
+    font-size:32rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(74,74,74,1);
+    line-height:44rpx;
+}

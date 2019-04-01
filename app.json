@@ -1,11 +1,14 @@
 {
   "pages": [
+    "pages/loginPage/loginPage",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/user/user",
     "pages/Product/list/list",
     "pages/Product/bid/bid",
-    "pages/Product/show/show"
+    "pages/Product/show/show",
+    "pages/user/mine/mine",
+    "pages/user/addressList/addressList",
+    "pages/user/addressAdd/addressAdd"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,25 +20,25 @@
     "list": [
       {
         "selectedIconPath": "resource/images/tab-bar-index.png",
-        "iconPath": "resource/images/tab-bar-index.png",
+        "iconPath": "resource/images/tab-bar-indexN.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
         "selectedIconPath": "resource/images/tab-bar-store.png",
-        "iconPath": "resource/images/tab-bar-store.png",
+        "iconPath": "resource/images/tab-bar-storeN.png",
         "pagePath": "pages/Product/list/list",
         "text": "商城"
       },
       {
         "selectedIconPath": "resource/images/tab-bar-user.png",
-        "iconPath": "resource/images/tab-bar-user.png",
-        "pagePath": "pages/user/user",
+        "iconPath": "resource/images/tab-bar-userN.png",
+        "pagePath": "pages/user/mine/mine",
         "text": "我的"
       }
     ],
-    "color": "#cccccc",
-    "selectedColor": "#24252a",
+    "color": "#D9D9D9",
+    "selectedColor": "#FF1929",
     "backgroundColor": "#ffffff"
   }
 }

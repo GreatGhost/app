@@ -1,0 +1,7 @@
+<!--pages/user/addressAdd/addressAdd.wxml-->
+<view class="address-add">
+    <view class="address-add-item" wx:for="{{addInfoList}}">
+        <view class="name">{{item.name}}</view>
+        <view class="input"><input type="text" wx:if="{{item.type=='text'||item.type=='number'}}" placeholder="{{item.placeholder}}" /></view>
+    </view>
+</view>

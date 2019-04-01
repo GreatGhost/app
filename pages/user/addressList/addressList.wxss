@@ -1,0 +1,15 @@
+/* pages/user/addressList/addressList.wxss */
+button.address-add{
+    position: fixed;
+    bottom: 20rpx;
+    left:50%;
+    transform:translateX(-50%);
+    display: block;
+    width:680rpx;
+    height:70rpx;
+    line-height: 70rpx;
+    text-align: center;
+    background: rgba(255,25,41,0.8);
+    border-radius: 30rpx;
+    font-size:28rpx;
+}

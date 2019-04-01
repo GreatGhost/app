@@ -1,5 +1,5 @@
 <template name="product-index">
-    <view class="product-item-index">
+    <view class="product-item-index" data-data="{{item}}" bindtap="{{getProductDetail}}">
         <view class="img-wrap">
                 <image src="{{item.imgPath}}" wx:if="{{item.imgPath}}"/>
                 <view class="product-title bold">
@@ -18,7 +18,7 @@
                     <text>{{item.marketPrice}}</text>
                     </view>
             </view>
-            <button type="submit" class="product-btn" bindtap="{{action}}">立即出价</button>
+            <button type="submit" class="product-btn" catch:tap="{{action}}" data-data="{{item}}">立即出价</button>
         </view>
     </view>
 </template>
