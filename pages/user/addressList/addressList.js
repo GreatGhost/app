@@ -1,4 +1,8 @@
 // pages/user/addressList/addressList.js
+
+const activityApi = require('../../../utils/activityApi');
+
+
 Page({
 
   /**
@@ -12,12 +16,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getList();
   },
   add(){
     wx.navigateTo({
       url:"/pages/user/addressAdd/addressAdd"
     })
+  },
+  getList(){
+    activityApi.shipAddressList().then(res=>{
+      console.log(res);
+    })
   }
-
 })

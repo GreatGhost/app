@@ -8,7 +8,11 @@
     "pages/Product/show/show",
     "pages/user/mine/mine",
     "pages/user/addressList/addressList",
-    "pages/user/addressAdd/addressAdd"
+    "pages/user/addressAdd/addressAdd",
+    "pages/Product/assistance/assistance",
+    "pages/Order/show/show",
+    "pages/Order/list/list",
+    "pages/Product/showFromStore/showFromStore"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,11 +1,11 @@
 <template name="product-list-item">
-    <view class="product-list-item" bindtap="{{action}}">
+    <view class="product-list-item" data-data="{{item}}" bindtap="{{action}}">
         <view class="product-image">
             <image src="{{item.imgPath}}"></image>
         </view>
         <view class="content bold">
             <view class="title">
-                <text>{{item.title}}</text>
+                <text>{{item.goodsName}}</text>
                 <text>{{item.capacity}}</text>
             </view>
             <view class="bid-price">

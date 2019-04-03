@@ -1,5 +1,6 @@
 <!--pages/Product/show/show.wxml-->
 <import src="../../../wxParse/wxParse.wxml"/>
+<import src="/template/productAddress/productAddress.wxml" />
 <view class="show">
     <!-- 商品轮播图 -->
     <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{1000}}">
@@ -56,3 +57,4 @@
         <button class="bold bit" bindtap="goBid">立即出价</button>
     </view>
 </view>
+<template is="product-address" data="{{addressList:addressList,chooseAddr:'chooseAddr'}}"></template>

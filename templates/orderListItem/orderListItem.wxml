@@ -1,0 +1,23 @@
+<template name="order-list-item">
+    <view class="order-list-item" bindtap="{{action}}">
+        <view class="item-header bold">
+            <view class="order-id">订单号: {{item.orderId}}</view>
+            <view class="order-status">{{item.orderStatus}}</view>
+        </view>
+        <view class="item-content">
+            <image src="{{item.imgPath}}"></image>
+            <view class="product-content bold">
+                <view class="name">{{item.title}}</view>
+                <view class="price">¥ {{item.price}}</view>
+            </view>
+            <view class="mount normal">
+                x{{item.mount}}
+            </view>
+        </view>
+        <view class="item-footer normal">
+            <view class="btn">联系客服</view>
+            <view class="btn" wx:if="{{item.orderStatus=='待付款'}}">去支付</view>
+            <view class="btn" wx:if="{{item.orderStatus=='待收货'}}">确认收货</view>
+        </view>
+    </view>
+</template>

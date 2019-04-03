@@ -7,17 +7,20 @@ Page({
   data: {
     mineList:[
       {
-        name:'我的订单',id:'orderList',imgIcon:'/resource/images/tab-bar-index.png'
+        name:'我的订单',id:'orderList',imgIcon:'/resource/images/mine-order.png'
       },
       {
-        name:'地址管理',id:'address',imgIcon:'/resource/images/tab-bar-index.png'
+        name:'地址管理',id:'address',imgIcon:'/resource/images/mine-location.png'
       },
       {
-        name:'联系客服',id:'contact',imgIcon:'/resource/images/tab-bar-index.png',contactPhone:'400-1245-3235'
+        name:'联系客服',id:'contact',imgIcon:'/resource/images/mine-contact.png',contactPhone:'400-1245-3235'
       },
       {
-        name:'设置',id:'setting',imgIcon:'/resource/images/tab-bar-index.png'
-      },      
+        name:'设置',id:'setting',imgIcon:'/resource/images/mine-set.png'
+      },
+      {
+        name:'助力',id:'assistance',imgIcon:'/resource/images/tab-bar-index.png'
+      },          
     ]
   },
 
@@ -25,7 +28,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getUserInfo();
   },
   getUserInfo: function () {
     var that = this
@@ -48,8 +50,8 @@ Page({
     console.log(data);
     switch(data.id){
       case 'orderList':
-      wx.switchTab({
-        url:"/pages/Product/list/list"
+      wx.navigateTo({
+        url:'/pages/Order/list/list'
       });
       break;
       case 'address':
@@ -61,7 +63,13 @@ Page({
       wx.makePhoneCall({
         phoneNumber: data.contactPhone,
       })
-      break; 
+      break;
+
+      case 'assistance':
+      wx.navigateTo({
+        url:'/pages/Product/assistance/assistance'
+      });
+      break;       
       default:
       break;
 

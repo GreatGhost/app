@@ -13,3 +13,7 @@ button.address-add{
     border-radius: 30rpx;
     font-size:28rpx;
 }
+.notice{
+    padding-top:30rpx;
+    text-align: center;
+}

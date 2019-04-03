@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "template-nav":"../../../components/headNav/headNav"
+  },
+  "navigationBarTitleText": "我的订单"
+}

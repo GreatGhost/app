@@ -1,0 +1,19 @@
+<template name="product-address">
+    <view class="product-address-list">
+        <view class="title">收货地址</view>
+        <view class="address-list-item" data-data="{{item}}" bindtap="{{chooseAddr}}" wx:for="{{addressList}}" wx:key="{{index}}">
+            <image src="/resource/images/btn-choosed.png" wx:if="{{isChoose}}"></image>
+            <view class="addr-content">
+                <view class="user">
+                    <text>{{item.username}}</text>
+                    <text>{{item.mobile}}</text>
+                </view>
+                <view class="address">
+                    {{item.addr}}
+                </view>
+            </view>
+            <image src="/resource/images/btn-edit.png"></image>
+        </view>
+        <button>新建收货地址</button>
+    </view>
+</template>

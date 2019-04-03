@@ -9,6 +9,7 @@ App({
     // b.以上4步通过，newApi重新获取用户后刷新用户内存 跳转首页、或者非登录页
     wx.login({
       success: res => {
+        console.log(res);
         newApi.wxLogin(res.code)
       }
     });

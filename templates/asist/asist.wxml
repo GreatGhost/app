@@ -1,0 +1,34 @@
+
+<template name="asist-user">
+    <view class="user">
+        <view class="header-pic">
+            <image src="{{userInfo.imgPath}}"></image>
+            <view class="user">{{userInfo.username}}</view>
+        </view>
+        <view class="note-tip">我正在好嗨哟出价购买此商品 需要您的一臂之力</view>
+    </view>
+</template>
+
+<template name="asist-product">
+    <view class="product">
+        <image src="{{detail.imgPath}}"></image>
+        <view class="product-content">
+            <view class="name">{{detail.name}}</view>
+            <view class="unit">{{detail.unit}}</view>
+            <view class="price-region">{{detail.region}}</view>
+        </view>
+    </view>    
+</template>
+
+
+<template name="asist-condition">
+    <view class="condition">
+        <view class="title"></view>
+        <view class="condition-list"></view>
+        <view class="asist-btn"></view>
+        <view class="asist-rule"></view>
+    </view>
+</template>
+<template name="asist-rank-list">
+    
+</template>

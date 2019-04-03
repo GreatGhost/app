@@ -29,8 +29,8 @@ view.nick-name{
     border-bottom: 1rpx solid #F7F7F7;
 }
 .mine-info-item image.icon{
-    width:46rpx;
-    height:46rpx;
+    width:52rpx;
+    height:52rpx;
 }
 .mine-info-item .info-name{
     flex:1;

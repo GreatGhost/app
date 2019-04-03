@@ -1,0 +1,139 @@
+/* pages/Order/show/show.wxss */
+.order-header{
+    position: relative;
+}
+.header-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40rpx;
+    height:180rpx;
+    background:rgba(255,26,41,1);
+}
+.header-status .status{
+    font-size:36rpx;
+    font-family:PingFangSC-Semibold;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    line-height:50rpx;
+}
+.header-status .time-stamp{
+    font-size:28rpx;
+    font-family:PingFangSC-Semibold;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    line-height:40rpx;
+}
+.header-addr{
+    margin:-42rpx 30rpx 0;
+    display: flex;
+    padding:36rpx 48rpx 30rpx 34rpx;
+    background: #fff;
+    border-top-left-radius: 8rpx;
+    border-top-right-radius: 8rpx;
+}
+.header-addr image{
+    width:28rpx;
+    height:34rpx;
+    margin-right:24rpx;
+}
+.header-addr .content1{
+    display: flex;
+    align-items: center;
+}
+.header-addr .content1 view:first-child{
+    margin-right:30rpx;
+}
+.header-addr .content2{
+    margin-top:14rpx;
+    color:#9B9B9B;
+}
+.order-content{
+    margin-top:30rpx;
+    background: #fff;
+}
+.order-content .product-conent{
+    display: flex;
+    align-items: flex-start;
+    padding:40rpx;
+}
+.order-content .product-conent image{
+    width:128rpx;
+    height:128rpx;
+    margin-right:24rpx;
+    border-radius:4rpx;
+    border:1rpx solid rgba(242,242,242,1);
+}
+.product-name-price{
+    flex:1;
+}
+.order-content .product-conent .price{
+    margin-top:34rpx;
+    color:#FF1A29;
+}
+.order-content .product-conent .mount{
+    font-size:32rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:44rpx;
+}
+.order-content-item{
+    padding:30rpx 0 30rpx 40rpx;
+    border-top:1rpx solid #F7F7F7;
+    font-size:16px;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(74,74,74,1);
+    line-height:22px;
+}
+.order-content-item text:first-child{
+    margin-right:40rpx;
+}
+.order-time{
+    margin-top:30rpx;
+}
+.account{
+    display: flex;
+    padding:30rpx 40rpx;
+}
+.account text:first-child{
+    flex:1;
+}
+
+.account text:last-child{
+    margin-right:20rpx;
+    color:#FF1A29;
+    font-size:32rpx;
+    font-family:PingFangSC-Semibold;
+    font-weight:600;
+    color:rgba(255,26,41,1);
+    line-height:44rpx;
+}
+
+/* 底部按钮 */
+
+.order-btns{
+    margin-top:42rpx;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:20rpx 40rpx 20rpx 0;
+    background: #fff;
+
+}
+.order-btns .btns{
+    height:80rpx;
+    padding:0 56rpx;
+    margin-left:30rpx;
+    border-radius: 40rpx;
+    border:1rpx solid rgba(153,153,153,1);
+    text-align: center;
+    color:#999;
+    line-height: 80rpx;
+}
+.order-btns .btns:last-child{
+    background: #FF1A29;
+    color:#fff;
+    border:none;  
+}

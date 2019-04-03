@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
 const app = getApp();
+const activityApi=require('../../utils/activityApi');
+
 Page({
   data: {
     motto: 'Hello World',
@@ -75,5 +77,25 @@ Page({
     })
   },
   getIndexData(){
+    let that=this;
+    activityApi.initIndex().then(res=>{
+      let list=[];
+      if(res.data){
+        let data=res.data;
+        data.forEach(tmp=>{
+          if(tmp.goodsInfoDtos && tmp.goodsInfoDtos.length>0){
+            let goodsInfoDtos=tmp.goodsInfoDtos;
+            goodsInfoDtos.forEach(item=>{
+              Object.assign(item,{activityId:tmp.id})
+              list.push(item);
+            })
+          }
+        })
+      }
+
+      that.setData({
+        list:list
+      });
+    })
   }
 })

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "template-assist-product":"../../../components/asistProduct/asistProduct",
+    "template-assist-condition":"../../../components/asistCondition/asistCondition",
+    "template-assist-rank":"../../../components/asistRank/asistRank"
+  }
+}

@@ -1,0 +1,13 @@
+<!--pages/Product/assistance/assistance.wxml-->
+<view class="assistance">
+    <view class="section">
+        <view class="header-info">
+            <image src="{{userInfo.imgPath}}"></image>
+            <view class="user-name">{{userInfo.username}}</view>
+            <view class="note-tip">我正在好嗨哟出价购买此商品 需要您的一臂之力</view>
+        </view>
+    </view>
+    <view class="section">
+        <view class="title">好友助力榜</view>
+    </view>
+</view>

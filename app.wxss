@@ -32,3 +32,14 @@ page{
   font-weight:400;
   line-height: 34rpx;
 }
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  25% {opacity: 0.5;}
+  50% {opacity: 1;}
+  75% {opacity: .5;}
+  100% {opacity: 1;}
+}
+.animation-opacity{
+  animation:fadeIn 2s ease-in;
+
+}

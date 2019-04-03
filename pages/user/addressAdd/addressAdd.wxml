@@ -2,6 +2,39 @@
 <view class="address-add">
     <view class="address-add-item" wx:for="{{addInfoList}}">
         <view class="name">{{item.name}}</view>
-        <view class="input"><input type="text" wx:if="{{item.type=='text'||item.type=='number'}}" placeholder="{{item.placeholder}}" /></view>
+        <view class="input"wx:if="{{item.type=='text'||item.type=='number'}}">
+            <input type="text" 
+                   placeholder="{{item.placeholder}}"
+                   placeholder-style="color:rgba(191,191,191,1);"
+                    />
+        </view>
+        <view class="picker" wx:if="{{item.type=='picker'&&!item.value}}" bindtap="select">{{item.placeholder}}</view>
+        <view class="picker value" wx:if="{{item.type=='picker'&&item.value}}" bindtap="select">{{item.value}}</view>
     </view>
+    <button class="add-btn bold">保存并使用</button>
 </view>
+
+<view class="picker-view" animation="{{animationAddressMenu}}" style="visibility:{{addressMenuIsShow ? 'visible':'hidden'}}">
+        <!-- 确认取消按钮 -->
+        <view class='btn'>
+            <text catchtap="cityCancel">取消</text>
+            <text style="float: right" catchtap="citySure">确定</text>
+        </view>
+        <!-- 选择地址 -->
+        <picker-view class='cont' bindchange="cityChange" value="{{value}}" wx:key="">
+        <!-- 省 -->
+            <picker-view-column>
+                <view wx:for="{{provinces}}" class="picker-item" wx:key="{{index}}">{{item.name}}</view>
+            </picker-view-column>
+    <!-- 市 -->
+            <picker-view-column>
+                <view wx:for="{{citys}}" class="picker-item" wx:key="index">{{item.name}}</view>
+            </picker-view-column>
+    <!-- 区 -->
+            <picker-view-column>
+                <view wx:for="{{areas}}" class="picker-item" wx:key="index">{{item.name}}</view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+      
+    

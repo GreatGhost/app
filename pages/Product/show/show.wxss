@@ -1,4 +1,6 @@
 /* pages/Product/show/show.wxss */
+@import '../../../templates/productAddress/productAddress.wxss';
+
 .content-title{
     display: flex;
     justify-content: space-between;

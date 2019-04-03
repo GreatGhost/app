@@ -18,3 +18,83 @@
     color:rgba(74,74,74,1);
     line-height:44rpx;
 }
+.address-add-item .input{
+    flex:1;
+}
+.address-add-item .picker{
+    flex:1;
+    height: 102rpx;
+    font-size:32rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:rgba(191,191,191,1);
+    line-height:102rpx;
+}
+.address-add-item .picker.value{
+    color:#000;
+}
+.address-add-item .input input{
+    display: block;
+    width:100%;
+    font-size:32rpx;
+    font-family:PingFangSC-Regular;
+    font-weight:400;
+    color:#000;
+    line-height:44rpx;    
+}
+.add-btn{
+    position: absolute;
+    bottom:40rpx;
+    left:50%;
+    transform: translateX(-50%);
+    width:480rpx;
+    height:80rpx;
+    background:rgba(255,25,41,1);
+    border-radius:4rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color:rgba(255,255,255,1);
+}
+
+.picker-view {
+    width: 100%;
+    display: flex;
+    z-index:12;
+    background-color: #fff;
+    background: rgba(0, 0, 0, .2);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0rpx;
+    height: 40vh;
+}
+.btn {
+    width: 100%;
+    height: 90rpx;
+    padding: 0 24rpx;
+    box-sizing: border-box;
+    line-height: 90rpx;
+    text-align: center;
+    display: flex;
+    background: rgba(255,255,255,.8);
+    justify-content: space-between;
+}
+.cont {
+    width: 100%;
+    height: 389rpx;
+}
+.picker-item {
+    line-height: 70rpx;
+    margin-left: 5rpx;
+    margin-right: 5rpx;
+    text-align: center;
+}
+.address {
+    width: 100%;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    border-bottom: 1rpx solid #f1f1f1;
+}

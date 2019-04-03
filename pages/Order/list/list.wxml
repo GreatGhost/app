@@ -1,0 +1,9 @@
+<!--pages/Order/list/list.wxml-->
+<import src="/templates/orderListItem/orderListItem.wxml"/>
+<view class="order-list">
+    <template-nav nav="{{navs}}"></template-nav>
+    <view class="list">
+            <template is="order-list-item" wx:for="{{list}}" data="{{item:item, action:'goOrderDetail'}}"></template>
+    </view>
+
+</view>

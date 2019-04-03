@@ -1,0 +1,62 @@
+<!--pages/Order/show/show.wxml-->
+<view class="order-show">
+    <view class="order-header">
+        <view class="header-status">
+            <view class="status">{{order.status}}</view>
+            <view class="time-stamp">剩余: {{order.lastTime}}</view>
+        </view>
+        <view class="header-addr">
+            <image src="/resource/images/tab-bar-index.png"></image>
+            <view class="addr-content">
+                <view class="content1 bold">
+                    <view class="addr-user-name">{{userInfo.username}}</view>
+                    <view class="addr-user-mobile">{{userInfo.mobile}}</view>
+                </view>
+                <view class="content2 small">
+                    {{userInfo.addr}}
+                </view>
+            </view>
+
+        </view>
+    </view>
+    <view class="order-content">
+        <view class="product-conent">
+            <image src="{{order.imgPath}}"></image>
+            <view class="product-name-price bold">
+                <view class="name">{{order.title}}</view>
+                <view class="price">¥ {{order.price}}</view>
+            </view>
+            <view class="mount">x{{order.mount}}</view>
+        </view>
+
+        <!-- order-rest-info -->
+        <view class="order-orderID order-content-item">
+            <view >
+                <text>订单编号</text>
+                <text>{{order.orderId}}</text>
+            </view>
+            <view class="order-time">
+                <text>下单时间</text>
+                <text>{{order.orderTime}}</text>
+            </view>
+        </view>
+        <view class="order-send-type order-content-item">
+            <text>配送方式</text>
+            <text>{{order.sendType}}</text>
+        </view>
+        <view class="payment order-content-item">
+                <text>支付方式</text>
+                <text>{{order.payment}}</text>
+        </view>
+        <view class="account order-content-item">
+                <text>商品总额</text>
+                <text >¥{{order.account}}</text>
+        </view>
+    </view>
+    <view class="order-btns bold">
+        <view class="btns" wx:if="{{order.status=='等待付款'}}">取消订单</view>
+        <view class="btns" wx:if="{{order.status=='等待付款'}}">去支付</view>
+        <view class="btns" wx:if="{{order.status=='待收货'}}">联系客服</view>
+        <view class="btns" wx:if="{{order.status=='待收货'}}">确认收货</view>
+    </view>
+</view>

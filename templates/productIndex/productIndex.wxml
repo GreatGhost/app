@@ -1,9 +1,9 @@
 <template name="product-index">
     <view class="product-item-index" data-data="{{item}}" bindtap="{{getProductDetail}}">
         <view class="img-wrap">
-                <image src="{{item.imgPath}}" wx:if="{{item.imgPath}}"/>
+                <image src="{{item.goodsPicUrl}}" wx:if="{{item.goodsPicUrl}}"/>
                 <view class="product-title bold">
-                    <text>{{item.title}}</text>
+                    <text>{{item.goodsName}}</text>
                     <text>{{item.capacity}}</text>
                 </view>
         </view>
